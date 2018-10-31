@@ -9,6 +9,9 @@ class pruebaUnitaria(unittest.TestCase):
         self.driver.get(url)
         time.sleep(3)
 
+    def test_registro(self):
+        self.driver.find_element_by_id("registro").click()
+        
 
 
     def tearDown(self)
